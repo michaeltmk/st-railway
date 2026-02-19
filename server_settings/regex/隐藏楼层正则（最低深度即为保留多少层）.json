@@ -1,0 +1,18 @@
+{
+    "id": "c866846a-a0b6-4b1b-86d2-a8e7a782009d",
+    "scriptName": "[隐藏][不发送]远楼层消息",
+    "findRegex": "/.*/s",
+    "replaceString": "",
+    "trimStrings": [],
+    "placement": [
+        1,
+        2
+    ],
+    "disabled": false,
+    "markdownOnly": true,
+    "promptOnly": true,
+    "runOnEdit": true,
+    "substituteRegex": 0,
+    "minDepth": 10,
+    "maxDepth": null
+}
