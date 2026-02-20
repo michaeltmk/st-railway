@@ -32,6 +32,7 @@ logging:
 
 gemini:
   apiVersion: '${SILLYTAVERN_GEMINI_API_VERSION}'
+  thoughtSignatures: true
   # Enables caching of the system prompt (if supported). Only for OpenRouter.
   # -- IMPORTANT! --
   # Use only when the prompt before the chat history is static and doesn't change between requests
@@ -78,4 +79,28 @@ sso:
   # as that used for authentik. (Ensure the username in authentik
   # is an exact match in lowercase with that in sillytavern).
   authentikAuth: false
+##endregion
+
+##region v1.16.0
+heartbeatInterval: 0
+
+# NOTE: Probably useless?
+cors:
+  # Enable or disable CORS middleware
+  enabled: true
+  # Allowed origins. Use "null" to match the default browser file origin.
+  # You can set "*" to allow any origin, or a list of allowed origins.
+  origin:
+    - "null"
+  # Allowed methods
+  methods:
+    - "OPTIONS"
+  # Allowed request headers (optional)
+  allowedHeaders: []
+  # Exposed response headers (optional)
+  exposedHeaders: []
+  # Allow credentials (cookies, authorization headers)
+  credentials: false
+  # Preflight cache max age in seconds (optional)
+  maxAge: null
 ##endregion
